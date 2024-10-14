@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Rehan Zubair</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main Header -->
+    <header class="main-header">
+      <h1>Rehan Zubair's Portfolio</h1>
+      <p>Your gateway to my web development world!</p>
+    </header>
+
+    <!-- Personal Introduction -->
+    <section class="intro" id="bio">
+      <h2>Biography</h2>
+      <p>
+        With more than 2 years in web design, I craft engaging websites for
+        diverse clients, including small businesses and non-profits. Proficient
+        in HTML and CSS, I also implement dynamic features like forms and
+        e-commerce functionalities. As a QA Automation Engineer, I excel with
+        tools like Selenium and Cypress, ensuring top-notch software quality
+        through rigorous testing. I am fluent in Python, JavaScript, and Java,
+        committed to delivering excellence in every project.
+      </p>
+    </section>
+
+    <!-- Showcase of Work -->
+    <section class="projects" id="showcase">
+      <h2>My Work</h2>
+      <div class="project-item">
+        <h3>QR code Scanner</h3>
+        <img src="./qr code web.png" alt="QR App Screenshot" />
+        <p>
+          Our platform provides a fast and user-friendly way to scan QR codes
+          using your device's camera. Whether you're accessing product
+          information, promotional offers, or connecting to Wi-Fi networks, our
+          tool makes it effortless.
+        </p>
+      </div>
+      <div class="project-item">
+        <h3>SCAN USING UPLOAD FILE AND CAMERA</h3>
+        <img src="./qr code web 2.png" alt="upload file  Screenshot" />
+        <p>
+          Our platform allows you to easily scan QR codes from images or
+          documents by uploading files directly. Whether you have a photo, a
+          screenshot, or a PDF containing QR codes, our tool provides a quick
+          and efficient way to extract the encoded information.
+        </p>
+      </div>
+    </section>
+
+    <!-- Reach Out Section -->
+    <section class="contact-section" id="get-in-touch">
+      <h2>Get in Touch</h2>
+      <form action="send_form.php" method="POST">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="userEmail">Email Address:</label>
+        <input type="email" id="userEmail" name="userEmail" required />
+
+        <label for="userPhone">Phone Number:</label>
+        <input type="tel" id="userPhone" name="userPhone" required />
+
+        <label for="userGender">Gender:</label>
+        <select id="userGender" name="userGender" required>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="non-binary">Non-binary</option>
+        </select>
+
+        <label for="userAge">Age:</label>
+        <input type="number" id="userAge" name="userAge" required />
+
+        <label for="userHobbies">Hobbies:</label>
+        <select id="userHobbies" name="userHobbies[]" multiple required>
+          <option value="coding">Coding</option>
+          <option value="reading">Reading</option>
+          <option value="gaming">Gaming</option>
+          <option value="traveling">Traveling</option>
+          <option value="sports">Sports</option>
+        </select>
+
+        <label for="userAddress">Address:</label>
+        <input type="text" id="userAddress" name="userAddress" required />
+
+        <label for="userCountry">Country:</label>
+        <input type="text" id="userCountry" name="userCountry" required />
+
+        <label for="userCity">City:</label>
+        <input type="text" id="userCity" name="userCity" required />
+
+        <label for="userMessage">Message:</label>
+        <textarea id="userMessage" name="userMessage" required></textarea>
+
+        <button type="submit">Contact Me</button>
+      </form>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="footer">
+      <p>Follow me on:</p>
+      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+      <a href="https://www.github.com" target="_blank">GitHub</a>
+      <p>&copy; 2024 Rehan Zubair</p>
+    </footer>
+  </body>
+</html>
